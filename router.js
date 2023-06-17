@@ -39,9 +39,9 @@ module.exports = function (req, res) {
     musicController.showEdit(req, res);
   } else if (method === "GET" && pathname === "/remove") {
     musicController.doRemove(req, res);
-  } else if (method === "post" && pathname === "/add") {
+  } else if (method === "POST" && pathname === "/add") {
     musicController.doAdd(req, res);
-  } else if (method === "post" && pathname === "/edit") {
+  } else if (method === "POST" && pathname === "/edit") {
     musicController.doEdit(req, res);
   }
 };
